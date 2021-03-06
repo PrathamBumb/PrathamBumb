@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>User Management</title>
+    <link rel="stylesheet" type="text/css" href="view.css" media="all" />
+  
+    <script src="https://unpkg.com/p5ble@0.0.4/dist/p5.ble.js" type="text/javascript"></script>
+  <script src="main.js"></script>
+  </head>
+  <body id="main_body">
+    <br>
+    <img  src="splash.png" alt="" />
+    <div  id="form_container">
+      <h1><a>User Management</a></h1>
+      <div id="form_12080" class="appnitro" >
+        <div class="form_description">
+          
+          <p>SAS Automation</p>
+          <button id="connect_btn"  onclick="connectToBle()">Connect</button>
+        </div>
+        <!-- <ul> -->
+          <h3>Users Phone </h3>
+
+            
+            
+          
+            <label class="description" >Person 1 </label>
+            <div>
+              <input
+              
+                placeholder="Phone Number"
+                id="person_1_no"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_1_save" onclick="ph_1_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 2 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_2_no"
+               
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_2_save" onclick="ph_2_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 3 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_3_no"
+                
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_3_save" onclick="ph_3_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 4 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_4_no"
+               
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_4_save" onclick="ph_4_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 5 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_5_no"
+               
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_5_save" onclick="ph_5_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 6 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_6_no"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_6_save" onclick="ph_6_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 7 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_7_no"
+                
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_7_save" onclick="ph_7_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 8 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_8_no"
+                
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_8_save" onclick="ph_8_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 9 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_9_no"
+                
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_9_save" onclick="ph_9_save()">Save</button>
+            </div>
+            <label class="description" for="element_1">Person 10 </label>
+            <div>
+              <input
+                placeholder="Phone Number"
+                id="person_10_no"
+               
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button id="person_10_save" onclick="ph_10_save()">Save</button>
+            </div>
+            <h2>Message Setting</h2>
+
+
+            <label class="description" for="element_1">Register 1 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_1_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_1_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_1_save()">Save</button>
+            </div>
+            <br>
+
+            <label class="description" for="element_1">Register 2 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_2_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_2_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_2_save()">Save</button>
+            </div>
+            <br>
+
+
+            <label class="description" for="element_1">Register 3 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_3_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_3_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_3_save()">Save</button>
+            </div>
+            <br>
+
+            <label class="description" for="element_1">Register 4 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_4_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_4_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_4_save()">Save</button>
+            </div>
+            <br>
+
+            <label class="description" for="element_1">Register 5 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_5_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_5_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_5_save()">Save</button>
+            </div>
+            <br>
+
+            <label class="description" for="element_1">Register 6 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_6_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_6_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_6_save()">Save</button>
+            </div>
+            <br>
+
+            <label class="description" for="element_1">Register 7 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_7_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_7_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_7_save()">Save</button>
+            </div>
+            <br>
+
+            <label class="description" for="element_1">Register 8 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_8_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_8_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_8_save()">Save</button>
+            </div>
+            <br>
+
+            <label class="description" for="element_1">Register 9 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_9_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_9_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_9_save()">Save</button>
+            </div>
+            <br>
+
+            <label class="description" for="element_1">Register 10 </label>
+            <p>If High</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_10_high" 
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+             
+            </div>
+            <p>If Low</p>
+            <div>
+              <input
+                placeholder=""
+                id="reg_10_low"
+                class="element text medium"
+                type="text"
+                maxlength="255"
+                value=""
+              />
+              <button onclick="reg_10_save()">Save</button>
+            </div>
+            <br>
+            
+          <!-- </li>
+        </ul> -->
+      </div>
+      
+      <div id="footer">SAS Automation</div>
+    </div>
+    <img id="bottom" src="bottom.png" alt="" />
+  </body>
+</html>
